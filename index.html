@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Dost Kazığı Online</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<main>
+<section id="v-profile">
+  <h1>Dost Kazığı <span>Online</span></h1>
+  <label class="photo"><input type="file" id="file" accept="image/*" hidden>
+    <div id="prev" class="av big ph">+</div><small>Fotoğraf seç / değiştir</small></label>
+  <input id="name" maxlength="16" placeholder="Adın" autocomplete="off">
+  <button id="create" class="btn">Oda Kur</button>
+  <div class="or">ya da</div>
+  <div class="row"><input id="code" inputmode="numeric" maxlength="6" placeholder="6 haneli oda kodu"><button id="join" class="btn alt">Katıl</button></div>
+  <p id="err" class="err"></p>
+</section>
+<section id="v-room" hidden></section>
+</main>
+<div id="toast"></div>
+<script src="/socket.io/socket.io.js"></script><script src="app.js"></script>
+</body></html>
